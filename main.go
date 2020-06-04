@@ -17,8 +17,6 @@ func GoldenRatio (matrix [][]int) []int {
 	x := int((size / 2))
 	y := int((size / 2))
 	result := make([]int, 0)
-	fmt.Println("start point: ", start_point )
-	fmt.Println("end point: ", end_point )
 	for k := 1; k <= ( size - 1 ); k++ {
 		if k < (size - 1){
 			for j := 0; j < 2; j++ {
@@ -54,6 +52,13 @@ func GoldenRatio (matrix [][]int) []int {
 	return result
 }
 
+func reverse(numbers []int) []int {
+	newNumbers := make([]int, 0, len(numbers))
+	for i := len(numbers)-1; i >= 0; i-- {
+		newNumbers = append(newNumbers, numbers[i])
+	}
+	return newNumbers
+}
 
 func main() {
 	input := [][]int{
@@ -61,5 +66,6 @@ func main() {
 		[]int{4,5,6},
 		[]int{7,8,9},
 	}
-	fmt.Println(GoldenRatio(input))
+	array := GoldenRatio(input)
+	fmt.Println(reverse(array))
 }
