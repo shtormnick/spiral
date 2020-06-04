@@ -4,10 +4,7 @@ import (
 	"fmt"
 )
 
-type Point struct {
-	x int
-	y int
-}
+
 
 func GoldenRatio (matrix [][]int) []int {
 	size := len(matrix)

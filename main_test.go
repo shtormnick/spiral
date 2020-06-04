@@ -15,7 +15,7 @@ var testsGoldenRatio = []testGoldenRatio{
 		[]int{1, 2, 3}, 
 		[]int{4, 5, 6}, 
 		[]int{7, 8, 9}}, 
-		[]int{1, 2, 3, 6, 9, 8, 7, 4, 5}},
+		[]int{5, 4, 7, 8, 9, 6, 3, 2}},
 }
 
 func TestSplitter(t *testing.T) {
