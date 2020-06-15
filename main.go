@@ -12,7 +12,7 @@ func GoldenRatio(matrix [][]int, m, n int) []int { // i - index of first item ,j
 	var  k, l int = 0, 0
 	result := make([]int, 0)
 
-	for k < m && l < n {
+	for k < m && l < n && m == n {
 
 		for i := l; i < n; i++ {
 			result = append(result, matrix[k][i])
